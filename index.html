@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -176,7 +176,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 32px;display:fl
 .story-arrow-lbl{font-size:9px;font-weight:700;color:#3a3a3a;letter-spacing:.1em;text-transform:uppercase}
 .story-item{border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--border)}
 .story-item-label{padding:8px 14px;font-size:11px;font-weight:700;color:var(--red);letter-spacing:.1em;border-bottom:1px solid var(--border)}
-.story-item img{width:100%;display:block;object-fit:contain;background:#0f0f0f}
+.story-item img{width:100%;display:block;object-fit:cover;background:#0f0f0f;aspect-ratio:3/4;max-height:260px}
 
 /* ── FAQ ── */
 .faq-list{margin-top:36px;border-top:1px solid var(--border)}
@@ -497,19 +497,254 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')hofClose();}
       </div>
     </div>
 
-    <!-- 막막한 마음 일러스트 -->
+    <!-- 여자아이 이미지 -->
     <div style="margin-top:20px;display:flex;justify-content:center">
-      <div style="max-width:460px;width:100%">
-        <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border)">
-          <img src="images/스크린샷 2026-04-16 153249.png" alt="막막한 마음" style="width:100%;display:block">
+      <div style="max-width:460px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border)">
+        <img src="images/여자아이.png" alt="여자아이" style="width:100%;display:block">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 스토리라인 (3막) -->
+<div class="sec sec-alt">
+  <div class="inner">
+    <div style="display:flex;flex-direction:column;align-items:stretch">
+
+      <!-- 1막 -->
+      <div style="background:#111;border:1px solid #222;border-radius:12px;overflow:hidden;text-align:center">
+        <div style="padding:18px 22px 12px">
+          <div style="display:inline-flex;width:30px;height:30px;border-radius:50%;background:#1a1a1a;border:1px solid #333;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#555;margin-bottom:8px">1</div>
+          <div style="font-size:13px;font-weight:700;color:#666;letter-spacing:.12em">근자감의 시대</div>
         </div>
-        <div style="margin-top:16px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 20px;text-align:center">
-          <div style="font-size:13px;font-weight:900;color:var(--accent);line-height:1.7">"내 인생의 마지막 미용이라고 생각하고<br>마케팅 공부를 시작했습니다"</div>
+        <!-- 이미지 1 — 전체 -->
+        <img src="images/1일 1피드.png" alt="1일 1피드" style="width:100%;display:block">
+        <div style="padding:18px 24px 24px">
+          <p style="font-size:15px;color:#999;line-height:1.9;margin:0">
+            블로그, 1일1피드, 모델 작업, 교육까지.<br>
+            주 7일을 쉬지 않고 달렸습니다.<br>
+            <strong style="color:#ddd;font-size:16px">5년 후 인스타 평균 조회수 3천. 매출 300만원.</strong>
+          </p>
         </div>
-        <!-- 책 더미 (노력의 증거) -->
-        <div style="margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid var(--border)">
-          <img src="images/고난을 이기려는 나의 노력 들.png" alt="마케팅 공부 기록" style="width:100%;display:block">
+      </div>
+
+      <!-- 연결선 1→2 -->
+      <div style="display:flex;flex-direction:column;align-items:center;padding:6px 0;gap:2px">
+        <div style="width:1.5px;height:28px;background:linear-gradient(to bottom,#333,#555)"></div>
+        <div style="font-size:16px;color:#555;line-height:1">↓</div>
+        <div style="width:1.5px;height:12px;background:linear-gradient(to bottom,#555,#300)"></div>
+      </div>
+
+      <!-- 2막 -->
+      <div style="border:1px solid rgba(255,60,60,0.35);border-left:3px solid var(--red);background:#0d0000;border-radius:0 12px 12px 0;overflow:hidden;text-align:center">
+        <div style="padding:18px 22px 12px">
+          <div style="font-size:13px;font-weight:700;color:rgba(255,60,60,0.7);letter-spacing:.12em">참담함의 순간</div>
         </div>
+        <img src="images/참담한.png" alt="참담함의 순간" style="width:100%;display:block">
+        <div style="padding:16px 24px 22px">
+          <p style="font-size:14px;color:#666;line-height:1.85;margin:0">
+            20대를 쏟아부은 미용을 그만둘 수도 있겠다 싶었습니다.<br>
+            그게 마지막 이직의 이유였습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 연결선 2→3 -->
+      <div style="display:flex;flex-direction:column;align-items:center;padding:6px 0;gap:2px">
+        <div style="width:1.5px;height:28px;background:linear-gradient(to bottom,#400,#444)"></div>
+        <div style="font-size:16px;color:#555;line-height:1">↓</div>
+        <div style="width:1.5px;height:12px;background:linear-gradient(to bottom,#444,#333)"></div>
+      </div>
+
+      <!-- 3막 — 살아남으려는 노력 -->
+      <div style="background:#0e0e0e;border:1px solid #2a2a2a;border-radius:12px;overflow:hidden;text-align:center">
+        <div style="padding:18px 22px 12px">
+          <div style="display:inline-flex;width:30px;height:30px;border-radius:50%;background:#1a1a1a;border:1px solid #333;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#666;margin-bottom:8px">3</div>
+          <div style="font-size:13px;font-weight:700;color:#666;letter-spacing:.12em">살아남으려는 노력</div>
+        </div>
+        <!-- 이미지 먼저 -->
+        <div style="display:flex;justify-content:center;padding:0 0 4px">
+          <img src="images/마케팅 공부.png" alt="마케팅 공부" style="width:45%;display:block;border-radius:10px">
+        </div>
+        <!-- 글 뒤에 -->
+        <div style="padding:22px 24px 24px">
+          <p style="font-size:16px;font-weight:700;color:#ddd;line-height:1.85;margin:0 0 16px">
+            인생이 코너에 몰렸을 때,<br>
+            처음으로 <strong style="color:#fff">마케팅 공부</strong>를 시작했습니다.
+          </p>
+          <p style="font-size:15px;color:#888;line-height:1.9;margin:0 0 16px">
+            그리고 그곳에서 깨달았습니다.<br>
+            사람들이 반응하게 만들려면
+          </p>
+          <div style="background:#1a1a1a;border:1px solid #333;border-radius:10px;padding:16px 20px;margin-bottom:16px">
+            <p style="font-size:15px;color:#888;line-height:1.85;margin:0">
+              내 입맛에 맞는 콘텐츠가 아니라<br>
+              <strong style="color:var(--accent);font-size:17px">고객 입맛에 맞는 콘텐츠</strong>여야 한다는 것을.
+            </p>
+          </div>
+          <p style="font-size:14px;color:#666;line-height:1.9;margin:0">
+            5년간 올린 콘텐츠의 방향을<br>
+            처음으로 완전히 바꿨습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 연결선 3→4 -->
+      <div style="display:flex;flex-direction:column;align-items:center;padding:6px 0;gap:2px">
+        <div style="width:1.5px;height:28px;background:linear-gradient(to bottom,#333,rgba(200,255,0,0.3))"></div>
+        <div style="font-size:16px;color:rgba(200,255,0,0.5);line-height:1">↓</div>
+        <div style="width:1.5px;height:12px;background:linear-gradient(to bottom,rgba(200,255,0,0.3),rgba(200,255,0,0.5))"></div>
+      </div>
+
+      <!-- 4막 — 방향을 바꾼 결과 -->
+      <div style="background:linear-gradient(135deg,#071000 0%,#0d0d0d 100%);border:1px solid rgba(200,255,0,0.25);border-radius:12px;overflow:hidden;text-align:center">
+        <div style="padding:20px 22px 14px">
+          <div style="display:inline-flex;width:28px;height:28px;border-radius:50%;background:rgba(200,255,0,0.1);border:1px solid rgba(200,255,0,0.4);align-items:center;justify-content:center;font-size:14px;line-height:1;margin-bottom:10px">✦</div>
+          <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.12em;margin-bottom:10px">방향을 바꾼 결과</div>
+          <p style="font-size:14px;font-weight:700;color:#fff;line-height:1.85;margin:0">
+            그로부터 <span style="color:var(--accent)">1년 반 후</span>,<br>
+            숫자가 모든 것을 말해줬습니다.
+          </p>
+        </div>
+        <!-- 1년반후변화 이미지 -->
+        <div style="margin:0 16px;border-radius:10px;overflow:hidden;border:1px solid rgba(200,255,0,0.15)">
+          <img src="images/1년반후변화.png" alt="1년 반 후 계정 변화" style="width:100%;display:block">
+        </div>
+        <!-- 수치 -->
+        <div style="margin:16px 16px 0;display:flex;align-items:center;gap:0;background:rgba(0,0,0,0.4);border:1px solid rgba(200,255,0,0.15);border-radius:10px;overflow:hidden">
+          <div style="flex:1;padding:20px 16px;text-align:center;border-right:1px solid rgba(200,255,0,0.1)">
+            <div style="font-size:10px;color:#444;margin-bottom:4px;font-weight:700;letter-spacing:.1em">시작</div>
+            <div style="font-size:clamp(1.2rem,3vw,1.6rem);font-weight:900;color:#555">평균<br>3천</div>
+            <div style="font-size:10px;color:#333;margin-top:3px">조회수</div>
+          </div>
+          <div style="padding:0 14px;text-align:center;flex-shrink:0">
+            <div style="font-size:10px;font-weight:700;color:var(--accent);margin-bottom:3px">1년 반 후</div>
+            <div style="font-size:22px;color:var(--accent)">→</div>
+          </div>
+          <div style="flex:1;padding:20px 16px;text-align:center;border-left:1px solid rgba(200,255,0,0.1);background:rgba(200,255,0,0.04)">
+            <div style="font-size:10px;color:var(--accent);margin-bottom:4px;font-weight:700;letter-spacing:.1em">현재</div>
+            <div style="font-size:clamp(1.2rem,3vw,1.6rem);font-weight:900;color:var(--accent)">평균<br>10만</div>
+            <div style="font-size:10px;color:#666;margin-top:3px">조회수</div>
+          </div>
+        </div>
+        <div style="padding:18px 22px 22px">
+          <p style="font-size:12px;color:#555;line-height:1.9;margin:0">
+            열심히의 방향이 바뀌자,<br>
+            세상이 반응하기 시작했습니다.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════
+     9. 강사 성과 증명
+════════════════════════════════ -->
+<div class="sec">
+  <div class="inner">
+    <div class="label">강사 성과</div>
+    <div class="ttl"><em>@la.b_yoosu</em><br>숫자로 증명합니다</div>
+
+    <!-- 강사 소개 (슬라이더 위로 이동) -->
+    <div class="intro-grid" style="margin-top:32px">
+      <div class="intro-img">
+        <img src="images/profile.jpg" alt="유수 강사 프로필">
+      </div>
+      <div>
+        <div class="intro-name">유수 <span>Yoosu</span></div>
+        <div class="intro-handle">@la.b_yoosu · 압구정라브 · 12년차 헤어 디자이너</div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-num">3,000만+</div>
+            <div class="stat-lbl">총 릴스 조회수</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">30개+</div>
+            <div class="stat-lbl">100만+ 릴스</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">98명</div>
+            <div class="stat-lbl">월 신규 고객</div>
+          </div>
+        </div>
+        <div class="intro-bio">
+          20대를 통째로 쏟아부었습니다.<br>
+          주 7일, 5년. 그래도 조회수는 3천, 매출은 300만이었습니다.<br>
+          그때 처음으로 방향을 바꿨습니다.
+        </div>
+      </div>
+    </div>
+
+    <!-- 릴스 자동 스크롤 배너 -->
+    <p style="font-size:13px;color:var(--gray);margin-top:56px;margin-bottom:16px;letter-spacing:.05em">▼ 실제 릴스 성과 (r01~r20)</p>
+    <div class="reel-hall-wrap">
+      <div class="reel-hall-track">
+        <!-- set 1 -->
+        <div class="reel-hall-card"><img src="images/r01.jpg" alt="733만"><div class="reel-hall-ov"></div><div class="reel-hall-views">733만</div></div>
+        <div class="reel-hall-card"><img src="images/r02.jpg" alt="550만"><div class="reel-hall-ov"></div><div class="reel-hall-views">550만</div></div>
+        <div class="reel-hall-card"><img src="images/r03.jpg" alt="535만"><div class="reel-hall-ov"></div><div class="reel-hall-views">535만</div></div>
+        <div class="reel-hall-card"><img src="images/r04.jpg" alt="351만"><div class="reel-hall-ov"></div><div class="reel-hall-views">351만</div></div>
+        <div class="reel-hall-card"><img src="images/r05.jpg" alt="326만"><div class="reel-hall-ov"></div><div class="reel-hall-views">326만</div></div>
+        <div class="reel-hall-card"><img src="images/r06.jpg" alt="275만"><div class="reel-hall-ov"></div><div class="reel-hall-views">275만</div></div>
+        <div class="reel-hall-card"><img src="images/r07.jpg" alt="257만"><div class="reel-hall-ov"></div><div class="reel-hall-views">257만</div></div>
+        <div class="reel-hall-card"><img src="images/r08.jpg" alt="218만"><div class="reel-hall-ov"></div><div class="reel-hall-views">218만</div></div>
+        <div class="reel-hall-card"><img src="images/r09.jpg" alt="213만"><div class="reel-hall-ov"></div><div class="reel-hall-views">213만</div></div>
+        <div class="reel-hall-card"><img src="images/r10.jpg" alt="195만"><div class="reel-hall-ov"></div><div class="reel-hall-views">195만</div></div>
+        <div class="reel-hall-card"><img src="images/r11.jpg" alt="133만"><div class="reel-hall-ov"></div><div class="reel-hall-views">133만</div></div>
+        <div class="reel-hall-card"><img src="images/r12.jpg" alt="129만"><div class="reel-hall-ov"></div><div class="reel-hall-views">129만</div></div>
+        <div class="reel-hall-card"><img src="images/r13.jpg" alt="116만"><div class="reel-hall-ov"></div><div class="reel-hall-views">116만</div></div>
+        <div class="reel-hall-card"><img src="images/r14.jpg" alt="112만"><div class="reel-hall-ov"></div><div class="reel-hall-views">112만</div></div>
+        <div class="reel-hall-card"><img src="images/r15.jpg" alt="105만"><div class="reel-hall-ov"></div><div class="reel-hall-views">105만</div></div>
+        <div class="reel-hall-card"><img src="images/r16.jpg" alt="91만"><div class="reel-hall-ov"></div><div class="reel-hall-views">91만</div></div>
+        <div class="reel-hall-card"><img src="images/r17.jpg" alt="90만"><div class="reel-hall-ov"></div><div class="reel-hall-views">90만</div></div>
+        <div class="reel-hall-card"><img src="images/r18.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
+        <div class="reel-hall-card"><img src="images/r19.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
+        <div class="reel-hall-card"><img src="images/r20.jpg" alt="76만"><div class="reel-hall-ov"></div><div class="reel-hall-views">76만</div></div>
+        <!-- set 2 (seamless loop) -->
+        <div class="reel-hall-card"><img src="images/r01.jpg" alt="733만"><div class="reel-hall-ov"></div><div class="reel-hall-views">733만</div></div>
+        <div class="reel-hall-card"><img src="images/r02.jpg" alt="550만"><div class="reel-hall-ov"></div><div class="reel-hall-views">550만</div></div>
+        <div class="reel-hall-card"><img src="images/r03.jpg" alt="535만"><div class="reel-hall-ov"></div><div class="reel-hall-views">535만</div></div>
+        <div class="reel-hall-card"><img src="images/r04.jpg" alt="351만"><div class="reel-hall-ov"></div><div class="reel-hall-views">351만</div></div>
+        <div class="reel-hall-card"><img src="images/r05.jpg" alt="326만"><div class="reel-hall-ov"></div><div class="reel-hall-views">326만</div></div>
+        <div class="reel-hall-card"><img src="images/r06.jpg" alt="275만"><div class="reel-hall-ov"></div><div class="reel-hall-views">275만</div></div>
+        <div class="reel-hall-card"><img src="images/r07.jpg" alt="257만"><div class="reel-hall-ov"></div><div class="reel-hall-views">257만</div></div>
+        <div class="reel-hall-card"><img src="images/r08.jpg" alt="218만"><div class="reel-hall-ov"></div><div class="reel-hall-views">218만</div></div>
+        <div class="reel-hall-card"><img src="images/r09.jpg" alt="213만"><div class="reel-hall-ov"></div><div class="reel-hall-views">213만</div></div>
+        <div class="reel-hall-card"><img src="images/r10.jpg" alt="195만"><div class="reel-hall-ov"></div><div class="reel-hall-views">195만</div></div>
+        <div class="reel-hall-card"><img src="images/r11.jpg" alt="133만"><div class="reel-hall-ov"></div><div class="reel-hall-views">133만</div></div>
+        <div class="reel-hall-card"><img src="images/r12.jpg" alt="129만"><div class="reel-hall-ov"></div><div class="reel-hall-views">129만</div></div>
+        <div class="reel-hall-card"><img src="images/r13.jpg" alt="116만"><div class="reel-hall-ov"></div><div class="reel-hall-views">116만</div></div>
+        <div class="reel-hall-card"><img src="images/r14.jpg" alt="112만"><div class="reel-hall-ov"></div><div class="reel-hall-views">112만</div></div>
+        <div class="reel-hall-card"><img src="images/r15.jpg" alt="105만"><div class="reel-hall-ov"></div><div class="reel-hall-views">105만</div></div>
+        <div class="reel-hall-card"><img src="images/r16.jpg" alt="91만"><div class="reel-hall-ov"></div><div class="reel-hall-views">91만</div></div>
+        <div class="reel-hall-card"><img src="images/r17.jpg" alt="90만"><div class="reel-hall-ov"></div><div class="reel-hall-views">90만</div></div>
+        <div class="reel-hall-card"><img src="images/r18.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
+        <div class="reel-hall-card"><img src="images/r19.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
+        <div class="reel-hall-card"><img src="images/r20.jpg" alt="76만"><div class="reel-hall-ov"></div><div class="reel-hall-views">76만</div></div>
+      </div>
+    </div>
+
+    <!-- 슬로건 마무리 -->
+    <div style="margin-top:8px;text-align:center;padding:24px 20px;border-top:1px solid #1a1a1a">
+      <p style="font-size:12px;color:#555;line-height:1.9;margin:0 0 12px">
+        저와 똑같이 열심히 하고 있지만<br>그만큼 반응을 얻지 못하는 분들을 위해
+      </p>
+      <div style="font-size:15px;font-weight:900;color:#fff;margin-bottom:8px">'고객관점'을 만들었습니다.</div>
+      <div style="display:inline-block;background:rgba(255,120,0,0.08);border:1px solid rgba(255,120,0,0.3);border-radius:20px;padding:7px 18px;font-size:12px;font-weight:700;color:rgba(255,140,0,0.85)">"열심히 하는 것만큼 세상이 반응하게 만들자"</div>
+
+      <!-- 고객관점 로고 -->
+      <div style="margin-top:28px;display:flex;justify-content:center">
+        <div style="max-width:260px;width:100%;border-radius:14px;overflow:hidden;border:1.5px solid rgba(255,120,0,0.35);box-shadow:0 0 32px rgba(255,120,0,0.12)">
+          <img src="images/고객관점 메인 브랜딩 이미지.png" alt="고객관점" style="width:100%;display:block;object-fit:contain;background:#000">
+        </div>
+      </div>
+
+      <!-- 고객관점 이미지 -->
+      <div style="margin-top:24px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,120,0,0.25)">
+        <img src="images/고객.png" alt="고객관점" style="width:100%;display:block">
       </div>
     </div>
   </div>
@@ -522,36 +757,17 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')hofClose();}
   <div class="inner">
     <div class="label">REALITY</div>
     <div class="ttl">요즘 <em>외면할 수 없는</em> 현실</div>
-    <p class="sub">자영업자의 폐업률은 역대 최고.<br>기술만 좋아서는, 성실하기만 해서는 살아남기 어렵습니다.<br><strong>고객을 끌어당기는 사람</strong>과 그렇지 못한 사람의 격차는<br>지금 이 순간에도 벌어지고 있습니다.</p>
 
-    <!-- 메인 이미지 -->
-    <div style="margin-top:32px;display:flex;justify-content:center">
-      <div style="max-width:640px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border)">
-        <img src="images/외면 할수없는 현실 .png" alt="외면할 수 없는 현실" style="width:100%;display:block">
+    <!-- 이미지 1·2·3 — 세로 순서 (사진 먼저, 설명 나중) -->
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:28px">
+      <div style="border-radius:16px;overflow:hidden;border:1px solid var(--border)">
+        <img src="images/외면할수없는 현실 2.png" alt="외면할 수 없는 현실 2" style="width:100%;display:block">
       </div>
-    </div>
-
-    <!-- 현실1 / 현실2 이미지 + 캡션 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto">
-      <div>
-        <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border)">
-          <img src="images/현실1.png" alt="하루 최대매출 10만원" style="width:100%;display:block">
-        </div>
-        <div style="margin-top:10px;padding:0 4px">
-          <div style="font-size:12px;font-weight:700;color:var(--red)">2025년 2월</div>
-          <div style="font-size:13px;font-weight:700;color:#fff;margin-top:2px">하루 최대 매출 <span style="color:var(--red)">10만원</span></div>
-          <div style="font-size:11px;color:#666;margin-top:4px">기술도 있고, 성실하게 일했지만</div>
-        </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid var(--border)">
+        <img src="images/외면 할수 없는 현실 1 .png" alt="외면할 수 없는 현실 1" style="width:100%;display:block">
       </div>
-      <div>
-        <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border)">
-          <img src="images/현실2.png" alt="릴스 130만뷰 매출 9,900원" style="width:100%;display:block">
-        </div>
-        <div style="margin-top:10px;padding:0 4px">
-          <div style="font-size:12px;font-weight:700;color:var(--red)">릴스 130만뷰</div>
-          <div style="font-size:13px;font-weight:700;color:#fff;margin-top:2px">매출 <span style="color:var(--red)">9,900원</span></div>
-          <div style="font-size:11px;color:#666;margin-top:4px">조회수와 예약은 전혀 다른 이야기</div>
-        </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid var(--border)">
+        <img src="images/외면할수 없 는현실 3.png" alt="외면할 수 없는 현실 3" style="width:100%;display:block">
       </div>
     </div>
   </div>
@@ -566,16 +782,16 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')hofClose();}
     <div class="ttl">고객은 이미<br><em>달라졌습니다</em></div>
     <p class="sub">요즘 고객은 헤어샵을 가기 전<br><strong>검색하고 → 비교하고 → 예약하고 → 방문합니다.</strong><br>그리고 직접 원하는 스타일을 연구해 옵니다.</p>
 
-    <div style="margin-top:32px">
-      <div class="img-card-full">
-        <img src="images/헤어시장의 변화.png" alt="헤어시장의 변화">
+    <!-- 이건희 -->
+    <div style="margin-top:32px;display:flex;justify-content:center">
+      <div style="max-width:440px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border)">
+        <img src="images/이건희.png" alt="변화를 못 느끼고 있어" style="width:100%;display:block">
       </div>
     </div>
 
-    <!-- 이건희 -->
-    <div style="margin-top:14px;display:flex;justify-content:center">
-      <div style="max-width:440px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border)">
-        <img src="images/이건희.png" alt="변화를 못 느끼고 있어" style="width:100%;display:block">
+    <div style="margin-top:14px">
+      <div class="img-card-full">
+        <img src="images/결정적 변화 .png" alt="헤어시장의 결정적 변화">
       </div>
     </div>
 
@@ -584,12 +800,6 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')hofClose();}
       <div style="flex:1;height:1px;background:var(--border)"></div>
       <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.18em">높아진 눈높이</div>
       <div style="flex:1;height:1px;background:var(--border)"></div>
-    </div>
-
-    <div>
-      <div class="img-card-full">
-        <img src="images/높아진 고객의 눈높이.png" alt="높아진 고객의 눈높이">
-      </div>
     </div>
 
     <!-- 높아진 눈높이 2열 미니 카드 -->
@@ -793,260 +1003,6 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')hofClose();}
 </div>
 
 <!-- ════════════════════════════════
-     8. 강사 스토리
-════════════════════════════════ -->
-<div class="sec sec-alt">
-  <div class="inner">
-    <div class="label">강사 스토리</div>
-    <div class="ttl">저도 똑같이<br><em>실패했습니다</em></div>
-    <p class="sub">1일 1피드를 3년 동안 했지만 평균 조회수는 3,000이었습니다.<br>그 벽을 넘기 위해 마케팅 서적을 수십 권 읽었고,<br>결국 <strong>고객의 시선으로 콘텐츠를 바라보는 법</strong>을 찾아냈습니다.</p>
-
-
-
-    <!-- 낮은 조회수 시절 -->
-    <div style="margin-top:20px">
-      <p style="font-size:13px;color:var(--gray);margin-bottom:14px;letter-spacing:.05em">▼ 방향을 바꾸기 전 — 평균 조회수 1,000~3,000대</p>
-      <div class="story-timeline">
-        <div class="story-item">
-          <div class="story-item-label">3년 전</div>
-          <img src="images/3년전  - 낮은 조회수  (1).png" alt="3년전 낮은 조회수">
-        </div>
-        <div class="story-item">
-          <div class="story-item-label">2년 전</div>
-          <img src="images/2년전  - 낮은 조회수  (2).png" alt="2년전 낮은 조회수">
-        </div>
-        <div class="story-item">
-          <div class="story-item-label">1년 전</div>
-          <img src="images/1년전  - 낮은 조회수  (3).png" alt="1년전 낮은 조회수">
-        </div>
-      </div>
-    </div>
-
-    <!-- 성장 그래프 -->
-    <div style="margin-top:20px" class="img-card-full">
-      <img src="images/노력후  매출 급 상승 .png" alt="조회수 급성장 그래프">
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════
-     9. 강사 성과 증명
-════════════════════════════════ -->
-<div class="sec">
-  <div class="inner">
-    <div class="label">강사 성과</div>
-    <div class="ttl"><em>@la.b_yoosu</em><br>숫자로 증명합니다</div>
-
-    <!-- 강사 소개 (슬라이더 위로 이동) -->
-    <div class="intro-grid" style="margin-top:32px">
-      <div class="intro-img">
-        <img src="images/profile.jpg" alt="유수 강사 프로필">
-      </div>
-      <div>
-        <div class="intro-name">유수 <span>Yoosu</span></div>
-        <div class="intro-handle">@la.b_yoosu · 압구정라브 · 12년차 헤어 디자이너</div>
-        <div class="stat-grid">
-          <div class="stat-box">
-            <div class="stat-num">3,000만+</div>
-            <div class="stat-lbl">총 릴스 조회수</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-num">30개+</div>
-            <div class="stat-lbl">100만+ 릴스</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-num">98명</div>
-            <div class="stat-lbl">월 신규 고객</div>
-          </div>
-        </div>
-        <div class="intro-bio">
-          20대를 통째로 쏟아부었습니다.<br>
-          주 7일, 5년. 그래도 조회수는 3천, 매출은 300만이었습니다.<br>
-          그때 처음으로 방향을 바꿨습니다.
-        </div>
-      </div>
-    </div>
-
-    <!-- 강사 서사 -->
-    <div style="margin-top:40px;display:flex;flex-direction:column;gap:12px">
-
-      <!-- 1막 -->
-      <div style="background:#111;border:1px solid #222;border-radius:12px;padding:20px 22px;text-align:center">
-        <div style="display:inline-flex;width:32px;height:32px;border-radius:50%;background:#1a1a1a;border:1px solid #333;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#444;margin-bottom:10px">1</div>
-        <div style="font-size:11px;font-weight:700;color:#444;letter-spacing:.1em;margin-bottom:8px">근자감의 시대</div>
-        <p style="font-size:13px;color:#888;line-height:1.85;margin:0">
-          블로그, 1일1피드, 모델 작업, 교육까지.<br>
-          주 7일을 쉬지 않고 달렸습니다.<br>
-          <strong style="color:#bbb">5년 후 인스타 평균 조회수 3천. 매출 300만원.</strong>
-        </p>
-      </div>
-
-      <!-- 2막 — 핵심 quote -->
-      <div style="border:1px solid rgba(255,60,60,0.3);border-left:3px solid var(--red);background:#0d0000;border-radius:0 12px 12px 0;padding:20px 22px;text-align:center">
-        <div style="font-size:11px;font-weight:700;color:rgba(255,60,60,0.6);letter-spacing:.1em;margin-bottom:10px">참담함의 순간</div>
-        <p style="font-size:14px;font-weight:700;color:#fff;line-height:1.8;margin:0 0 12px">
-          "지금껏 인생 최고로 열심히 했는데,<br>
-          <span style="color:var(--red)">'열심히'라는 연료를 더 넣는다고<br>내 인생이 바뀌지 않을 것 같았습니다."</span>
-        </p>
-        <p style="font-size:12px;color:#555;line-height:1.8;margin:0">
-          20대를 쏟아부은 미용을 그만둘 수도 있겠다 싶었습니다.<br>
-          그게 마지막 이직의 이유였습니다.
-        </p>
-      </div>
-
-      <!-- 3막 -->
-      <div style="background:#111;border:1px solid #222;border-radius:12px;padding:20px 22px;text-align:center">
-        <div style="display:inline-flex;width:32px;height:32px;border-radius:50%;background:rgba(200,255,0,0.08);border:1px solid rgba(200,255,0,0.3);align-items:center;justify-content:center;font-size:14px;line-height:1;margin-bottom:10px">✦</div>
-        <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.1em;margin-bottom:8px">방향을 바꾼 결과</div>
-        <p style="font-size:13px;color:#888;line-height:1.85;margin:0 0 12px">
-          더 열심히가 아니라, <strong style="color:#bbb">결과를 만든 사람들의 방법</strong>을<br>
-          하나씩 현실에 반영했습니다.
-        </p>
-        <div style="background:rgba(200,255,0,0.05);border:1px solid rgba(200,255,0,0.2);border-radius:8px;padding:12px 16px;display:inline-block;min-width:60%">
-          <div style="font-size:12px;color:#555;margin-bottom:4px">1년 반 후</div>
-          <div style="font-size:15px;font-weight:900;color:#fff">매출 2천 → <span style="color:var(--accent)">1년 내내 풀예약</span></div>
-        </div>
-      </div>
-
-      <!-- 슬로건 마무리 -->
-      <div style="margin-top:8px;text-align:center;padding:24px 20px;border-top:1px solid #1a1a1a">
-        <p style="font-size:12px;color:#555;line-height:1.9;margin:0 0 12px">
-          저와 똑같이 열심히 하고 있지만<br>그만큼 반응을 얻지 못하는 분들을 위해
-        </p>
-        <div style="font-size:15px;font-weight:900;color:#fff;margin-bottom:8px">'고객관점'을 만들었습니다.</div>
-        <div style="display:inline-block;background:rgba(255,120,0,0.08);border:1px solid rgba(255,120,0,0.3);border-radius:20px;padding:7px 18px;font-size:12px;font-weight:700;color:rgba(255,140,0,0.85)">"열심히 하는 것만큼 세상이 반응하게 만들자"</div>
-
-        <!-- 고객관점 로고 -->
-        <div style="margin-top:28px;display:flex;justify-content:center">
-          <div style="max-width:260px;width:100%;border-radius:14px;overflow:hidden;border:1.5px solid rgba(255,120,0,0.35);box-shadow:0 0 32px rgba(255,120,0,0.12)">
-            <img src="images/고객관점 메인 브랜딩 이미지.png" alt="고객관점" style="width:100%;display:block;object-fit:contain;background:#000">
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- 릴스 자동 스크롤 배너 -->
-    <p style="font-size:13px;color:var(--gray);margin-top:56px;margin-bottom:16px;letter-spacing:.05em">▼ 실제 릴스 성과 (r01~r20)</p>
-    <div class="reel-hall-wrap">
-      <div class="reel-hall-track">
-        <!-- set 1 -->
-        <div class="reel-hall-card"><img src="images/r01.jpg" alt="733만"><div class="reel-hall-ov"></div><div class="reel-hall-views">733만</div></div>
-        <div class="reel-hall-card"><img src="images/r02.jpg" alt="550만"><div class="reel-hall-ov"></div><div class="reel-hall-views">550만</div></div>
-        <div class="reel-hall-card"><img src="images/r03.jpg" alt="535만"><div class="reel-hall-ov"></div><div class="reel-hall-views">535만</div></div>
-        <div class="reel-hall-card"><img src="images/r04.jpg" alt="351만"><div class="reel-hall-ov"></div><div class="reel-hall-views">351만</div></div>
-        <div class="reel-hall-card"><img src="images/r05.jpg" alt="326만"><div class="reel-hall-ov"></div><div class="reel-hall-views">326만</div></div>
-        <div class="reel-hall-card"><img src="images/r06.jpg" alt="275만"><div class="reel-hall-ov"></div><div class="reel-hall-views">275만</div></div>
-        <div class="reel-hall-card"><img src="images/r07.jpg" alt="257만"><div class="reel-hall-ov"></div><div class="reel-hall-views">257만</div></div>
-        <div class="reel-hall-card"><img src="images/r08.jpg" alt="218만"><div class="reel-hall-ov"></div><div class="reel-hall-views">218만</div></div>
-        <div class="reel-hall-card"><img src="images/r09.jpg" alt="213만"><div class="reel-hall-ov"></div><div class="reel-hall-views">213만</div></div>
-        <div class="reel-hall-card"><img src="images/r10.jpg" alt="195만"><div class="reel-hall-ov"></div><div class="reel-hall-views">195만</div></div>
-        <div class="reel-hall-card"><img src="images/r11.jpg" alt="133만"><div class="reel-hall-ov"></div><div class="reel-hall-views">133만</div></div>
-        <div class="reel-hall-card"><img src="images/r12.jpg" alt="129만"><div class="reel-hall-ov"></div><div class="reel-hall-views">129만</div></div>
-        <div class="reel-hall-card"><img src="images/r13.jpg" alt="116만"><div class="reel-hall-ov"></div><div class="reel-hall-views">116만</div></div>
-        <div class="reel-hall-card"><img src="images/r14.jpg" alt="112만"><div class="reel-hall-ov"></div><div class="reel-hall-views">112만</div></div>
-        <div class="reel-hall-card"><img src="images/r15.jpg" alt="105만"><div class="reel-hall-ov"></div><div class="reel-hall-views">105만</div></div>
-        <div class="reel-hall-card"><img src="images/r16.jpg" alt="91만"><div class="reel-hall-ov"></div><div class="reel-hall-views">91만</div></div>
-        <div class="reel-hall-card"><img src="images/r17.jpg" alt="90만"><div class="reel-hall-ov"></div><div class="reel-hall-views">90만</div></div>
-        <div class="reel-hall-card"><img src="images/r18.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
-        <div class="reel-hall-card"><img src="images/r19.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
-        <div class="reel-hall-card"><img src="images/r20.jpg" alt="76만"><div class="reel-hall-ov"></div><div class="reel-hall-views">76만</div></div>
-        <!-- set 2 (seamless loop) -->
-        <div class="reel-hall-card"><img src="images/r01.jpg" alt="733만"><div class="reel-hall-ov"></div><div class="reel-hall-views">733만</div></div>
-        <div class="reel-hall-card"><img src="images/r02.jpg" alt="550만"><div class="reel-hall-ov"></div><div class="reel-hall-views">550만</div></div>
-        <div class="reel-hall-card"><img src="images/r03.jpg" alt="535만"><div class="reel-hall-ov"></div><div class="reel-hall-views">535만</div></div>
-        <div class="reel-hall-card"><img src="images/r04.jpg" alt="351만"><div class="reel-hall-ov"></div><div class="reel-hall-views">351만</div></div>
-        <div class="reel-hall-card"><img src="images/r05.jpg" alt="326만"><div class="reel-hall-ov"></div><div class="reel-hall-views">326만</div></div>
-        <div class="reel-hall-card"><img src="images/r06.jpg" alt="275만"><div class="reel-hall-ov"></div><div class="reel-hall-views">275만</div></div>
-        <div class="reel-hall-card"><img src="images/r07.jpg" alt="257만"><div class="reel-hall-ov"></div><div class="reel-hall-views">257만</div></div>
-        <div class="reel-hall-card"><img src="images/r08.jpg" alt="218만"><div class="reel-hall-ov"></div><div class="reel-hall-views">218만</div></div>
-        <div class="reel-hall-card"><img src="images/r09.jpg" alt="213만"><div class="reel-hall-ov"></div><div class="reel-hall-views">213만</div></div>
-        <div class="reel-hall-card"><img src="images/r10.jpg" alt="195만"><div class="reel-hall-ov"></div><div class="reel-hall-views">195만</div></div>
-        <div class="reel-hall-card"><img src="images/r11.jpg" alt="133만"><div class="reel-hall-ov"></div><div class="reel-hall-views">133만</div></div>
-        <div class="reel-hall-card"><img src="images/r12.jpg" alt="129만"><div class="reel-hall-ov"></div><div class="reel-hall-views">129만</div></div>
-        <div class="reel-hall-card"><img src="images/r13.jpg" alt="116만"><div class="reel-hall-ov"></div><div class="reel-hall-views">116만</div></div>
-        <div class="reel-hall-card"><img src="images/r14.jpg" alt="112만"><div class="reel-hall-ov"></div><div class="reel-hall-views">112만</div></div>
-        <div class="reel-hall-card"><img src="images/r15.jpg" alt="105만"><div class="reel-hall-ov"></div><div class="reel-hall-views">105만</div></div>
-        <div class="reel-hall-card"><img src="images/r16.jpg" alt="91만"><div class="reel-hall-ov"></div><div class="reel-hall-views">91만</div></div>
-        <div class="reel-hall-card"><img src="images/r17.jpg" alt="90만"><div class="reel-hall-ov"></div><div class="reel-hall-views">90만</div></div>
-        <div class="reel-hall-card"><img src="images/r18.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
-        <div class="reel-hall-card"><img src="images/r19.jpg" alt="82만"><div class="reel-hall-ov"></div><div class="reel-hall-views">82만</div></div>
-        <div class="reel-hall-card"><img src="images/r20.jpg" alt="76만"><div class="reel-hall-ov"></div><div class="reel-hall-views">76만</div></div>
-      </div>
-    </div>
-
-    <!-- 1년반 후 변화 소제목 -->
-    <div style="margin-top:60px;padding-top:40px;border-top:1px solid #1e1e1e">
-      <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.2em;margin-bottom:8px">BEFORE → AFTER</div>
-      <div style="font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;color:#fff">1년 반 후 변화</div>
-    </div>
-
-    <!-- 1년반 후 변화 이미지 -->
-    <div style="margin-top:20px" class="img-card-full">
-      <img src="images/1년반후변화.png" alt="1년 반 후 계정 변화">
-    </div>
-
-    <!-- 변화 수치 강조 -->
-    <div style="margin-top:28px;display:flex;align-items:center;gap:0;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden">
-      <div style="flex:1;padding:24px 20px;text-align:center;border-right:1px solid var(--border)">
-        <div style="font-size:11px;color:#555;margin-bottom:6px;font-weight:700;letter-spacing:.1em">시작</div>
-        <div style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:900;color:#666">평균<br>3천</div>
-        <div style="font-size:11px;color:#444;margin-top:4px">조회수</div>
-      </div>
-      <div style="padding:0 16px;text-align:center;flex-shrink:0">
-        <div style="font-size:11px;font-weight:700;color:var(--accent);margin-bottom:4px">1년 반 후</div>
-        <div style="font-size:24px;color:var(--accent)">→</div>
-      </div>
-      <div style="flex:1;padding:24px 20px;text-align:center;border-left:1px solid var(--border);background:rgba(200,255,0,0.04)">
-        <div style="font-size:11px;color:var(--accent);margin-bottom:6px;font-weight:700;letter-spacing:.1em">현재</div>
-        <div style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:900;color:var(--accent)">평균<br>10만</div>
-        <div style="font-size:11px;color:#666;margin-top:4px">조회수</div>
-      </div>
-    </div>
-
-    <!-- 매출과 고객유입 변화 소제목 -->
-    <div style="margin-top:60px;padding-top:40px;border-top:1px solid #1e1e1e">
-      <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.2em;margin-bottom:8px">SALES & GROWTH</div>
-      <div style="font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;color:#fff">매출과 고객유입 변화</div>
-    </div>
-
-    <!-- 매출 그래프 -->
-    <div style="margin-top:20px" class="img-card-full">
-      <img src="images/노력후  매출 급 상승 .png" alt="조회수·매출 급성장 그래프">
-    </div>
-
-    <!-- 메세지 강조 -->
-    <div style="margin-top:20px;background:rgba(200,255,0,0.06);border:1.5px solid var(--accent);border-radius:12px;padding:20px 24px;text-align:center">
-      <div style="font-size:clamp(1rem,2.5vw,1.3rem);font-weight:900;color:#fff;line-height:1.6">
-        마케팅으로 1년 만에<br>
-        <span style="color:var(--accent)">0</span> → 매출 <span style="color:var(--accent)">2,000만</span>까지 고공행진
-      </div>
-    </div>
-
-    <!-- 고객수 변화 -->
-    <div style="margin-top:20px">
-      <div class="dark-frame">
-        <div class="dark-frame-label">📍 이직 후 새 직장에서 시작 — 인스타 시작 후 월 신규 고객수 변화</div>
-        <img src="images/입사후  한달 15명 옴.png" alt="인스타 시작 전 월 15명">
-      </div>
-      <div class="dark-frame" style="margin-top:12px">
-        <div class="dark-frame-label">📈 1년반 후 신규고객 수 변화 — 평균 98명</div>
-        <img src="images/인스타후 100명이상.png" alt="인스타 후 100명 이상">
-      </div>
-    </div>
-
-    <!-- 고객수 강조 -->
-    <div style="margin-top:20px;background:rgba(200,255,0,0.06);border:1.5px solid var(--accent);border-radius:12px;padding:24px 28px;text-align:center">
-      <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(200,255,0,.5);margin-bottom:12px">고객관점 적용 후 신규 고객 변화</div>
-      <div style="font-size:clamp(1.1rem,3vw,1.4rem);font-weight:900;color:#fff;line-height:1.8">
-        한달 평균 <span style="color:var(--accent);font-size:clamp(1.4rem,4vw,1.9rem)">98명</span>의 신규 고객<br>
-        → 하루에 <span style="color:var(--accent);font-size:clamp(1.4rem,4vw,1.9rem)">4.5명</span>의 신규 고객
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════
      10. 수강생 결과
 ════════════════════════════════ -->
 <div class="sec sec-alt">
@@ -1177,6 +1133,543 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')hofClose();}
     </div>
   </div>
 </div>
+
+<!-- ════════════════════════════════
+     7-B. 뇌과학 심리 프로세스 섹션
+════════════════════════════════ -->
+<div class="sec" style="padding:60px 0 50px">
+  <div class="inner">
+
+    <!-- 도입 카피 -->
+    <div style="text-align:center;margin-bottom:48px">
+
+      <!-- 뇌 아이콘 -->
+      <div style="font-size:42px;margin-bottom:14px;filter:drop-shadow(0 0 12px rgba(200,255,0,0.35))">🧠</div>
+
+      <div style="font-size:13px;color:#555;font-weight:600;margin-bottom:10px;letter-spacing:.05em">혹시 이런 생각 드셨나요?</div>
+      <div style="font-size:clamp(1.2rem,3.5vw,1.6rem);font-weight:900;color:#fff;margin-bottom:16px">"다른 마케팅 강의랑<br>다 똑같은 거 아닌가요?"</div>
+      <div style="display:inline-block;width:40px;height:3px;background:#333;margin-bottom:20px"></div>
+      <div style="font-size:clamp(1.4rem,4vw,2rem);font-weight:900;color:var(--accent);margin-bottom:12px">아닙니다.</div>
+      <div style="font-size:13px;color:#888;margin-bottom:28px">이 강의는 <strong style="color:#fff">'감'이 아닌 '원리'</strong>로 만듭니다.</div>
+
+      <!-- 뇌과학 메인 강조 블록 -->
+      <div style="position:relative;display:inline-block;width:100%;max-width:560px;margin-bottom:36px">
+        <!-- 배경 글로우 -->
+        <div style="position:absolute;inset:-2px;border-radius:18px;background:linear-gradient(135deg,rgba(200,255,0,0.25),rgba(200,255,0,0.05));filter:blur(8px);z-index:0"></div>
+        <div style="position:relative;z-index:1;background:linear-gradient(135deg,#0f1800 0%,#0a0a0a 100%);border:1.5px solid rgba(200,255,0,0.45);border-radius:16px;padding:24px 28px;text-align:center">
+          <div style="font-size:10px;font-weight:700;color:rgba(200,255,0,0.5);letter-spacing:.25em;margin-bottom:10px">SCIENCE-BASED APPROACH</div>
+          <div style="font-size:clamp(1.3rem,4vw,1.9rem);font-weight:900;color:#fff;line-height:1.3;margin-bottom:6px">
+            뇌과학을 바탕으로 한<br><span style="color:var(--accent)">심리 프로세스 강의</span>
+          </div>
+          <div style="width:36px;height:2px;background:var(--accent);margin:14px auto 14px;opacity:.5"></div>
+          <div style="font-size:11px;color:#555;line-height:1.8">조회수를 올리는 건 기술이 아니라 <strong style="color:#888">심리 반응 구조</strong>다.<br>뇌가 반응하는 방식 그대로 콘텐츠를 설계한다.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 강의 예고 뱃지 -->
+    <div style="text-align:center;margin-bottom:28px">
+      <div style="display:inline-flex;align-items:center;gap:10px;background:#0f0f0f;border:1px solid #222;border-radius:10px;padding:10px 20px">
+        <span style="font-size:18px">📖</span>
+        <span style="font-size:12px;color:#555;font-weight:700">이 강의에서 다루는</span>
+        <span style="font-size:12px;font-weight:900;color:#fff">9가지 원리</span>
+        <span style="font-size:12px;color:#555;font-weight:700">중,</span>
+        <span style="font-size:12px;font-weight:900;color:var(--accent)">3가지만 먼저 공개합니다</span>
+      </div>
+    </div>
+
+    <!-- 카드 리스트 -->
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:700px;margin:0 auto">
+
+      <!-- Card 1: 부정몰입감 -->
+      <div style="background:#111;border:1px solid #1e1e1e;border-radius:18px;overflow:hidden;display:flex;align-items:stretch;min-height:160px">
+        <div style="flex:1;padding:22px 20px;display:flex;flex-direction:column;justify-content:center">
+          <div style="display:inline-block;background:var(--red);color:#fff;font-size:9px;font-weight:900;padding:3px 10px;border-radius:20px;letter-spacing:.05em;margin-bottom:12px;width:fit-content">01 · 부정몰입감</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin-bottom:8px;line-height:1.4">부정 자극이<br>클릭을 만든다</div>
+          <div style="font-size:11px;color:#555;line-height:1.7">사람은 긍정보다 부정 정보에 먼저 반응합니다.<br>"하면 안 되는", "보기 싫은" — 이 한 마디가 클릭을 만듭니다.</div>
+          <div style="margin-top:14px;font-size:26px;font-weight:900;color:var(--accent);letter-spacing:-.02em;line-height:1">46.5만 <span style="font-size:11px;color:#444;font-weight:400;vertical-align:middle">조회수</span></div>
+        </div>
+        <div style="width:110px;flex-shrink:0;position:relative">
+          <img src="images/부정 몰입감.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+          <div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.75);color:var(--red);font-size:8px;font-weight:900;padding:2px 7px;border-radius:10px;border:1px solid rgba(255,64,64,0.4);white-space:nowrap">▶ 46.5만</div>
+        </div>
+      </div>
+
+      <!-- Card 2: 숫자의 원칙 -->
+      <div style="background:#111;border:1px solid #1e1e1e;border-radius:18px;overflow:hidden;display:flex;align-items:stretch;min-height:160px">
+        <div style="flex:1;padding:22px 20px;display:flex;flex-direction:column;justify-content:center">
+          <div style="display:inline-block;background:#1a4a00;color:var(--accent);font-size:9px;font-weight:900;padding:3px 10px;border-radius:20px;border:1px solid rgba(200,255,0,0.3);letter-spacing:.05em;margin-bottom:12px;width:fit-content">02 · 숫자의 원칙</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin-bottom:8px;line-height:1.4">구체적 숫자가<br>신뢰를 만든다</div>
+          <div style="font-size:11px;color:#555;line-height:1.7">막연한 표현보다 구체적 숫자가 신뢰를 만듭니다.<br>"3배", "10초"처럼 수치가 보이면 뇌가 먼저 반응합니다.</div>
+          <div style="margin-top:14px;font-size:26px;font-weight:900;color:var(--accent);letter-spacing:-.02em;line-height:1">105만 <span style="font-size:11px;color:#444;font-weight:400;vertical-align:middle">조회수</span></div>
+        </div>
+        <div style="width:110px;flex-shrink:0;position:relative">
+          <img src="images/숫자의원칙.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+          <div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.75);color:var(--accent);font-size:8px;font-weight:900;padding:2px 7px;border-radius:10px;border:1px solid rgba(200,255,0,0.3);white-space:nowrap">▶ 105만</div>
+        </div>
+      </div>
+
+      <!-- Card 3: 사회적 증거 -->
+      <div style="background:#111;border:1px solid #1e1e1e;border-radius:18px;overflow:hidden;display:flex;align-items:stretch;min-height:160px">
+        <div style="flex:1;padding:22px 20px;display:flex;flex-direction:column;justify-content:center">
+          <div style="display:inline-block;background:#1a0a2a;color:#c084fc;font-size:9px;font-weight:900;padding:3px 10px;border-radius:20px;border:1px solid rgba(192,132,252,0.3);letter-spacing:.05em;margin-bottom:12px;width:fit-content">03 · 사회적 증거</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin-bottom:8px;line-height:1.4">타인의 선택이<br>다음 행동을 만든다</div>
+          <div style="font-size:11px;color:#555;line-height:1.7">사람은 타인이 선택한 것에 더 끌립니다.<br>"전 vs 후"는 선택의 증거를 보여주는 가장 강력한 구조입니다.</div>
+          <div style="margin-top:14px;font-size:26px;font-weight:900;color:var(--accent);letter-spacing:-.02em;line-height:1">129만 <span style="font-size:11px;color:#444;font-weight:400;vertical-align:middle">조회수</span></div>
+        </div>
+        <div style="width:110px;flex-shrink:0;position:relative">
+          <img src="images/사회적증거.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+          <div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.75);color:#c084fc;font-size:8px;font-weight:900;padding:2px 7px;border-radius:10px;border:1px solid rgba(192,132,252,0.3);white-space:nowrap">▶ 129만</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════
+     11-C. 왜 강의를 들어도 변화가 없을까
+════════════════════════════════ -->
+<div class="sec" style="padding:70px 0 60px">
+  <div class="inner">
+
+    <!-- 섹션 헤더 -->
+    <div style="text-align:center;margin-bottom:48px">
+      <div style="font-size:11px;font-weight:700;color:#555;letter-spacing:.2em;margin-bottom:12px">INSIGHT</div>
+      <div style="font-size:clamp(1.6rem,5vw,2.8rem);font-weight:900;color:#fff;line-height:1.2;margin-bottom:10px">왜 강의를 들어도<br><span style="color:var(--accent)">변화가 없을까?</span></div>
+      <div style="font-size:13px;color:#555;margin-top:10px">배우는 것과 적용하는 것은 다른 문제다. 변화에는 <strong style="color:#fff">'교정'</strong>과 <strong style="color:#fff">'반복'</strong>이 필요하다.</div>
+    </div>
+
+    <!-- 스텝 래퍼 -->
+    <div style="display:flex;flex-direction:column;gap:0">
+
+      <!-- STEP 1 -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</div>
+          <div style="font-size:13px;font-weight:900;color:#fff">외부 강의를 들어도</div>
+          <div style="font-size:11px;color:#444">— 왜 변화가 없을까?</div>
+        </div>
+        <div style="border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+          <img src="images/강의흐름1.png" alt="외부 강의를 들어도 왜 변화가 없을까" style="width:100%;display:block;object-fit:contain">
+        </div>
+      </div>
+
+      <!-- 화살표 -->
+      <div style="text-align:center;padding:16px 0;color:#2a2a2a;font-size:22px;line-height:1">↓</div>
+
+      <!-- STEP 2 -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</div>
+          <div style="font-size:13px;font-weight:900;color:#fff">핵심 문제 인식</div>
+          <div style="font-size:11px;color:#444">— 교정과 피드백이 없다</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+            <img src="images/보통 강의 흐름 2.png" alt="보통 강의 문제인식" style="width:100%;display:block">
+          </div>
+          <div style="border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+            <img src="images/수강생들의 공통 고민.png" alt="수강생 공통 고민" style="width:100%;display:block">
+          </div>
+        </div>
+      </div>
+
+      <!-- 화살표 -->
+      <div style="text-align:center;padding:16px 0;color:#2a2a2a;font-size:22px;line-height:1">↓</div>
+
+      <!-- STEP 3 서막 -->
+      <div style="margin:8px 0 24px;padding:20px 22px;background:linear-gradient(135deg,#0a0a0a 0%,#111 100%);border:1px solid #222;border-left:3px solid var(--accent);border-radius:0 12px 12px 0">
+        <div style="font-size:9px;font-weight:700;color:var(--accent);letter-spacing:.2em;margin-bottom:8px">STORY · 서막</div>
+        <div style="font-size:clamp(1rem,2.8vw,1.3rem);font-weight:900;color:#fff;line-height:1.5">내가 새로 복싱 체육관을 다니면서<br>알게 된 <span style="color:var(--accent)">강의의 본질</span></div>
+        <div style="font-size:11px;color:#444;margin-top:8px;line-height:1.7">운동과 강의는 같은 구조로 작동한다.</div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:#000;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</div>
+          <div style="font-size:13px;font-weight:900;color:#fff">복싱을 다니면서 알게 된 것</div>
+          <div style="font-size:11px;color:#444">— 잘못된 자세는 내 눈에 안 보인다</div>
+        </div>
+        <div style="border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+          <img src="images/복싱경험.png" alt="복싱 경험" style="width:100%;display:block">
+        </div>
+      </div>
+
+      <!-- 화살표 -->
+      <div style="text-align:center;padding:16px 0;color:#2a2a2a;font-size:22px;line-height:1">↓</div>
+
+      <!-- STEP 4 -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:#000;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0">4</div>
+          <div style="font-size:13px;font-weight:900;color:#fff">그래서 필요한 것</div>
+          <div style="font-size:11px;color:#444">— 좋은 PT(코치)의 교정과 피드백</div>
+        </div>
+        <div style="border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+          <img src="images/좋은 코치.png" alt="좋은 코치" style="width:100%;display:block">
+        </div>
+      </div>
+
+      <!-- 화살표 -->
+      <div style="text-align:center;padding:16px 0;color:#2a2a2a;font-size:22px;line-height:1">↓</div>
+
+      <!-- STEP 5 -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:#000;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0">5</div>
+          <div style="font-size:13px;font-weight:900;color:#fff">자세가 바뀌면 결과가 바뀐다</div>
+          <div style="font-size:11px;color:#444">— 콘텐츠도 마찬가지</div>
+        </div>
+        <div style="border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+          <img src="images/운동도 제대로 해야 변화가 생긴다.png" alt="운동도 자세가 중요" style="width:100%;display:block">
+        </div>
+      </div>
+
+      <!-- 화살표 -->
+      <div style="text-align:center;padding:16px 0;color:var(--accent);font-size:22px;line-height:1">↓</div>
+
+      <!-- STEP 6: 결론 -->
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:#000;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0">✓</div>
+          <div style="font-size:13px;font-weight:900;color:var(--accent)">결론</div>
+          <div style="font-size:11px;color:#555">— 좋은 강의 × 교정 × 반복 = 변화</div>
+        </div>
+        <div style="border-radius:16px;overflow:hidden;border:1px solid rgba(200,255,0,0.15)">
+          <img src="images/결국 좋은 강의란.png" alt="결국 좋은 강의란" style="width:100%;display:block">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 공감 사례: 왼쪽 이미지 + 오른쪽 카카오톡 (스텝 아래로 이동) -->
+    <div style="display:flex;align-items:stretch;gap:16px;margin-top:48px">
+      <div style="flex:1.1;border-radius:16px;overflow:hidden;border:1px solid #1e1e1e;min-height:200px">
+        <img src="images/다른 강의 이미지.png" alt="다른 강의를 들어도 변화가 없는 사례" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div style="flex:0.9;border-radius:16px;overflow:hidden;border:1px solid #1e1e1e">
+        <img src="images/다른 강의.png" alt="다른 강의 사례" style="width:100%;display:block">
+      </div>
+    </div>
+
+    <!-- 섹션 여백 -->
+    <div style="height:48px"></div>
+
+    <!-- ⑦ Before / After 동기화 영상 -->
+    <div style="margin-top:48px">
+      <div style="text-align:center;margin-bottom:20px">
+        <div style="font-size:11px;font-weight:700;color:#555;letter-spacing:.15em;margin-bottom:8px">REAL RESULT</div>
+        <div style="font-size:clamp(1rem,3vw,1.4rem);font-weight:900;color:#fff">교정 전 vs 교정 후 — 실제 콘텐츠</div>
+        <div style="font-size:11px;color:#444;margin-top:6px">같은 시간, 같은 내용 — 자세 하나가 반응을 바꾼다</div>
+      </div>
+
+      <!-- 영상 그리드: BEFORE → (화살표) → AFTER -->
+      <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:6px;max-width:640px;margin:0 auto;align-items:center">
+
+        <!-- BEFORE -->
+        <div style="position:relative;background:#150000;border:1px solid rgba(255,64,64,0.2);border-radius:16px;overflow:hidden">
+          <div style="background:rgba(255,64,64,0.08);padding:8px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,64,64,0.15)">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--red);display:inline-block"></span>
+            <span style="font-size:10px;font-weight:900;color:var(--red);letter-spacing:.08em">BEFORE · 교정 전</span>
+          </div>
+          <video id="vid-before" src="images/before.mp4" muted playsinline loop
+            style="width:100%;display:block;aspect-ratio:9/16;object-fit:cover"></video>
+          <!-- 검은 화면 오버레이 -->
+          <div id="vid-before-overlay" style="position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .12s"></div>
+        </div>
+
+        <!-- 가운데 화살표 -->
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 2px;gap:4px;user-select:none">
+          <div style="font-size:26px;color:var(--accent);font-weight:900;line-height:1;text-shadow:0 0 12px rgba(200,255,0,.5)">→</div>
+          <div style="font-size:7px;color:#444;font-weight:700;text-align:center;letter-spacing:.04em;line-height:1.4">SAME<br>TIME</div>
+        </div>
+
+        <!-- AFTER -->
+        <div style="position:relative;background:#0d1800;border:1px solid rgba(200,255,0,0.2);border-radius:16px;overflow:hidden">
+          <div style="background:rgba(200,255,0,0.06);padding:8px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(200,255,0,0.12)">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block"></span>
+            <span style="font-size:10px;font-weight:900;color:var(--accent);letter-spacing:.08em">AFTER · 교정 후</span>
+          </div>
+          <video id="vid-after" src="images/after.mp4" muted playsinline loop
+            style="width:100%;display:block;aspect-ratio:9/16;object-fit:cover"></video>
+          <!-- 검은 화면 오버레이 -->
+          <div id="vid-after-overlay" style="position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .12s"></div>
+        </div>
+
+      </div>
+
+      <!-- 프로그레스 바 + 초 카운터 -->
+      <div style="max-width:640px;margin:10px auto 0;padding:0 2px">
+        <!-- 초 숫자 마커 -->
+        <div style="display:flex;justify-content:space-between;margin-bottom:5px;padding:0 1px">
+          <span id="sec-dot-1" style="font-size:9px;font-weight:900;color:#2a2a2a;transition:color .15s,text-shadow .15s">1</span>
+          <span id="sec-dot-2" style="font-size:9px;font-weight:900;color:#2a2a2a;transition:color .15s,text-shadow .15s">2</span>
+          <span id="sec-dot-3" style="font-size:9px;font-weight:900;color:#2a2a2a;transition:color .15s,text-shadow .15s">3</span>
+          <span id="sec-dot-4" style="font-size:9px;font-weight:900;color:#2a2a2a;transition:color .15s,text-shadow .15s">4</span>
+          <span id="sec-dot-5" style="font-size:9px;font-weight:900;color:#2a2a2a;transition:color .15s,text-shadow .15s">5</span>
+          <span id="sec-dot-6" style="font-size:9px;font-weight:900;color:#2a2a2a;transition:color .15s,text-shadow .15s">6</span>
+        </div>
+        <!-- 게이지 트랙 -->
+        <div style="height:3px;background:#1a1a1a;border-radius:2px;overflow:hidden">
+          <div id="sync-progress" style="height:100%;width:0%;background:var(--accent);border-radius:2px"></div>
+        </div>
+      </div>
+
+      <!-- 재생 컨트롤 -->
+      <div style="text-align:center;margin-top:12px">
+        <button id="sync-play-btn" onclick="syncToggle()"
+          style="background:#111;border:1px solid #2a2a2a;color:#fff;font-size:12px;font-weight:700;padding:8px 24px;border-radius:30px;cursor:pointer;font-family:inherit;transition:all .2s"
+          onmouseenter="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+          onmouseleave="this.style.borderColor='#2a2a2a';this.style.color='#fff'">
+          ▶ 동시 재생
+        </button>
+        <div style="font-size:9px;color:#333;margin-top:6px">두 영상이 동시에 재생됩니다</div>
+      </div>
+
+      <!-- 원고 비교 -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:640px;margin:16px auto 0">
+
+        <!-- BEFORE 원고 -->
+        <div style="background:#150000;border:1px solid rgba(255,64,64,0.2);border-radius:14px;padding:16px 14px">
+          <div style="font-size:9px;font-weight:900;color:var(--red);letter-spacing:.08em;margin-bottom:10px">✕ 교정 전 도입부</div>
+          <div style="background:#1a0000;border-radius:10px;padding:12px;margin-bottom:10px">
+            <div style="font-size:11px;color:#666;line-height:1.8;font-style:italic">"사이드뱅 드라이<br>어떻게 해요?"</div>
+          </div>
+          <div style="font-size:9px;color:#444;line-height:1.7">
+            단순 질문형 도입 —<br>
+            <span style="color:var(--red)">✗ 주목 이유 없음</span><br>
+            <span style="color:var(--red)">✗ 내 문제인지 모름</span><br>
+            <span style="color:var(--red)">✗ 볼 이유를 못 느낌</span>
+          </div>
+        </div>
+
+        <!-- AFTER 원고 -->
+        <div style="background:#0d1800;border:1px solid rgba(200,255,0,0.2);border-radius:14px;padding:16px 14px">
+          <div style="font-size:9px;font-weight:900;color:var(--accent);letter-spacing:.08em;margin-bottom:10px">✓ 교정 후 도입부</div>
+          <div style="background:#1a2a00;border-radius:10px;padding:12px;margin-bottom:10px">
+            <div style="font-size:11px;color:#ccc;line-height:1.9">
+              <span style="color:var(--red);font-weight:900">"여기가 마음에 안 들어요!"</span><br>
+              <span style="font-size:10px;color:#888">↓ 문제 인식 먼저</span><br>
+              <span style="color:var(--accent);font-weight:900">"얼굴 2배 작아보이는<br>방법 알려드릴게요"</span><br>
+              <span style="font-size:10px;color:#888">↓ 이득 제시</span>
+            </div>
+          </div>
+          <div style="font-size:9px;color:#555;line-height:1.7">
+            문제 → 해결 구조 —<br>
+            <span style="color:var(--accent)">✓ 즉시 공감·주목</span><br>
+            <span style="color:var(--accent)">✓ "내 얘기다" 반응</span><br>
+            <span style="color:var(--accent)">✓ 끝까지 볼 이유 생김</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 핵심 한줄 -->
+      <div style="max-width:640px;margin:12px auto 0;background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:14px 20px;display:flex;align-items:center;gap:14px">
+        <div style="font-size:20px;flex-shrink:0">🧠</div>
+        <div>
+          <div style="font-size:10px;color:#444;margin-bottom:3px;font-weight:700">숏폼 도입부의 원칙</div>
+          <div style="font-size:12px;color:#ddd;line-height:1.7"><strong style="color:#fff">도입부 3초</strong>에 <span style="color:var(--red);font-weight:900">문제 인식</span>을 주고, <span style="color:var(--accent);font-weight:900">얻을 수 있는 이득</span>을 보여줘야 스크롤을 멈춘다.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ⑧ 조회수 비포/에프터 -->
+    <div style="margin-top:40px;max-width:640px;margin-left:auto;margin-right:auto">
+      <div style="text-align:center;margin-bottom:18px">
+        <div style="font-size:12px;color:#444;font-weight:700">실제 조회수 변화</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px">
+
+        <!-- BEFORE -->
+        <div style="flex:1;background:#150000;border:1px solid rgba(255,64,64,0.25);border-radius:16px;overflow:hidden">
+          <div style="background:rgba(255,64,64,0.08);padding:7px 14px;border-bottom:1px solid rgba(255,64,64,0.15);display:flex;align-items:center;gap:6px">
+            <span style="width:7px;height:7px;border-radius:50%;background:var(--red);display:inline-block"></span>
+            <span style="font-size:9px;font-weight:900;color:var(--red);letter-spacing:.08em">BEFORE · 교정 전</span>
+          </div>
+          <div style="position:relative">
+            <img src="images/수강생 전 3천조회수 .png" alt="교정 전" style="width:100%;display:block;aspect-ratio:9/16;object-fit:cover">
+            <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.9));padding:24px 12px 14px;text-align:center">
+              <div style="font-size:11px;color:#888;margin-bottom:2px">평균 조회수</div>
+              <div style="font-size:28px;font-weight:900;color:var(--red);letter-spacing:-.02em">3천</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 화살표 -->
+        <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:6px">
+          <div style="font-size:9px;color:#444;font-weight:700;white-space:nowrap">교정 후</div>
+          <div style="font-size:28px;color:var(--accent)">→</div>
+          <div style="font-size:9px;color:var(--accent);font-weight:900">+1,133%</div>
+        </div>
+
+        <!-- AFTER -->
+        <div style="flex:1;background:#0d1800;border:1px solid rgba(200,255,0,0.25);border-radius:16px;overflow:hidden">
+          <div style="background:rgba(200,255,0,0.06);padding:7px 14px;border-bottom:1px solid rgba(200,255,0,0.12);display:flex;align-items:center;gap:6px">
+            <span style="width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block"></span>
+            <span style="font-size:9px;font-weight:900;color:var(--accent);letter-spacing:.08em">AFTER · 교정 후</span>
+          </div>
+          <div style="position:relative">
+            <img src="images/피드백 후 3만7천 조회수.png" alt="교정 후" style="width:100%;display:block;aspect-ratio:9/16;object-fit:cover">
+            <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.9));padding:24px 12px 14px;text-align:center">
+              <div style="font-size:11px;color:#aaa;margin-bottom:2px">달성 조회수</div>
+              <div style="font-size:28px;font-weight:900;color:var(--accent);letter-spacing:-.02em">3.7만</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 한줄 결론 -->
+      <div style="margin-top:16px;background:#0f1800;border:1px solid rgba(200,255,0,0.15);border-radius:12px;padding:14px 18px;text-align:center">
+        <span style="font-size:12px;color:#666">똑같은 주제, 똑같은 사람 — </span>
+        <span style="font-size:12px;font-weight:900;color:#fff">자세 교정 하나로</span>
+        <span style="font-size:12px;color:var(--accent);font-weight:900"> 조회수 10배</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var vb  = document.getElementById('vid-before');
+  var va  = document.getElementById('vid-after');
+  var btn = document.getElementById('sync-play-btn');
+  var ovB = document.getElementById('vid-before-overlay');
+  var ovA = document.getElementById('vid-after-overlay');
+  var bar = document.getElementById('sync-progress');
+  var dots = [null,
+    document.getElementById('sec-dot-1'),
+    document.getElementById('sec-dot-2'),
+    document.getElementById('sec-dot-3'),
+    document.getElementById('sec-dot-4'),
+    document.getElementById('sec-dot-5'),
+    document.getElementById('sec-dot-6')
+  ];
+
+  var PLAY_SEC  = 6;    // 재생 시간 (초)
+  var PAUSE_SEC = 1.0;  // 검은 화면 시간 (초)
+  var loopTimer = null;
+  var rafId     = null;
+  var startTs   = null;
+  var active    = false;
+
+  /* ─── 초 마커 리셋 ─── */
+  function resetDots(){
+    for(var i=1;i<=6;i++){
+      dots[i].style.color = '#2a2a2a';
+      dots[i].style.textShadow = 'none';
+    }
+  }
+
+  /* ─── rAF: 게이지 + 초 마커 ─── */
+  function animateTick(){
+    if(!active || !startTs) return;
+    var elapsed = (performance.now() - startTs) / 1000;
+    var pct = Math.min(elapsed / PLAY_SEC * 100, 100);
+    bar.style.width = pct + '%';
+
+    var curSec = Math.min(Math.floor(elapsed) + 1, 6);
+    for(var i=1;i<=6;i++){
+      if(i === curSec && elapsed < PLAY_SEC){
+        dots[i].style.color = '#C8FF00';
+        dots[i].style.textShadow = '0 0 8px rgba(200,255,0,.7)';
+      } else if(i < curSec){
+        dots[i].style.color = '#444';
+        dots[i].style.textShadow = 'none';
+      } else {
+        dots[i].style.color = '#2a2a2a';
+        dots[i].style.textShadow = 'none';
+      }
+    }
+    if(elapsed < PLAY_SEC) rafId = requestAnimationFrame(animateTick);
+  }
+
+  /* ─── 검은 화면 ON / OFF ─── */
+  function blackOn(){
+    ovB.style.opacity = '1';
+    ovA.style.opacity = '1';
+    bar.style.width   = '100%';
+    bar.style.background = '#1a1a1a';
+    resetDots();
+  }
+  function blackOff(){
+    ovB.style.opacity = '0';
+    ovA.style.opacity = '0';
+    bar.style.background = 'var(--accent)';
+    bar.style.width = '0%';
+  }
+
+  /* ─── 루프 시작 ─── */
+  function startLoop(){
+    if(loopTimer) clearTimeout(loopTimer);
+    if(rafId)     cancelAnimationFrame(rafId);
+    blackOff();
+
+    vb.currentTime = 0; va.currentTime = 0;
+    vb.play(); va.play();
+    btn.textContent = '⏸ 일시정지';
+    startTs = performance.now();
+    rafId   = requestAnimationFrame(animateTick);
+
+    loopTimer = setTimeout(function tick(){
+      if(!active) return;
+      // 6초 후: 영상 정지 + 검은 화면
+      vb.pause(); va.pause();
+      if(rafId){ cancelAnimationFrame(rafId); rafId = null; }
+      blackOn();
+      // 1초 후: 검은 화면 해제 + 처음부터 재생
+      loopTimer = setTimeout(function(){
+        if(!active) return;
+        blackOff();
+        vb.currentTime = 0; va.currentTime = 0;
+        vb.play(); va.play();
+        startTs = performance.now();
+        rafId   = requestAnimationFrame(animateTick);
+        loopTimer = setTimeout(tick, PLAY_SEC * 1000);
+      }, PAUSE_SEC * 1000);
+    }, PLAY_SEC * 1000);
+  }
+
+  /* ─── 루프 정지 ─── */
+  function stopLoop(){
+    active = false;
+    if(loopTimer){ clearTimeout(loopTimer); loopTimer = null; }
+    if(rafId)    { cancelAnimationFrame(rafId); rafId = null; }
+    vb.pause(); va.pause();
+    blackOff();
+    resetDots();
+    btn.textContent = '▶ 동시 재생';
+  }
+
+  /* ─── 화면 진입 시 자동 시작 ─── */
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting && !active){ active = true; startLoop(); }
+    });
+  }, {threshold: 0.4});
+  obs.observe(vb);
+
+  /* ─── 버튼 토글 ─── */
+  window.syncToggle = function(){
+    if(active) stopLoop();
+    else { active = true; startLoop(); }
+  };
+
+  /* ─── 싱크 드리프트 보정 (0.5초마다) ─── */
+  setInterval(function(){
+    if(active && !vb.paused && Math.abs(vb.currentTime - va.currentTime) > 0.15){
+      va.currentTime = vb.currentTime;
+    }
+  }, 500);
+})();
+</script>
 
 <!-- ════════════════════════════════
      광고비 vs 강의
